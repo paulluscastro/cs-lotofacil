@@ -1,0 +1,9 @@
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\bin\Debug\LotoFacil.exe.config
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\bin\Debug\LotoFacil.exe
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\bin\Debug\LotoFacil.pdb
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\obj\Debug\LotoFacil.csprojResolveAssemblyReference.cache
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\obj\Debug\LotoFacil.MainForm.resources
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\obj\Debug\LotoFacil.csproj.GenerateResource.Cache
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\obj\Debug\LotoFacil.exe
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\obj\Debug\LotoFacil.pdb
+C:\Users\paullus\Google Drive\Projetos\LotoFacil\LotoFacil\obj\Debug\LotoFacil.FormAdicionaJogoSorteado.resources

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3092FFDC-33A8-4FAE-A73F-F94E5FF85177}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LotoFacil</RootNamespace>
+    <AssemblyName>LotoFacil</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoDados\BancoDados.cs" />
+    <Compile Include="Classes\AnalisadorEstiloSequencias.cs" />
+    <Compile Include="Classes\AnalisadorEstiloImparPar.cs" />
+    <Compile Include="Classes\AnalisadorImparPar.cs" />
+    <Compile Include="Classes\AnalisadorMaioresIntervalos.cs" />
+    <Compile Include="Classes\AnalisadorJogo.cs" />
+    <Compile Include="Classes\AnalisadorMaioresSequencias.cs" />
+    <Compile Include="Classes\AnalsadorEstiloSequenciasCompleto.cs" />
+    <Compile Include="Classes\BaseAnalisador.cs" />
+    <Compile Include="Classes\Carregador.cs" />
+    <Compile Include="Classes\Faxineiro.cs" />
+    <Compile Include="Classes\Gerador.cs" />
+    <Compile Include="Classes\Jogo.cs" />
+    <Compile Include="Classes\JogoAprovadoArgs.cs" />
+    <Compile Include="Classes\JogoAprovadoHandler.cs" />
+    <Compile Include="Classes\JogoReprovadoArgs.cs" />
+    <Compile Include="Classes\JogoReprovadoHandler.cs" />
+    <Compile Include="Enums\TipoAposta.cs" />
+    <Compile Include="Enums\MotivoReprovacao.cs" />
+    <Compile Include="FormAdicionaJogoSorteado.cs" />
+    <Compile Include="FormAdicionaJogoSorteado.Designer.cs">
+      <DependentUpon>FormAdicionaJogoSorteado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validadores\IValidador.cs" />
+    <Compile Include="Validadores\ValidadorGenerico.cs" />
+    <Compile Include="Validadores\ValidadorGeral.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAdicionaJogoSorteado.resx">
+      <DependentUpon>FormAdicionaJogoSorteado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes" />
+    <Folder Include="BancoDados" />
+    <Folder Include="Enums" />
+    <Folder Include="Validadores" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
