@@ -41,6 +41,11 @@ namespace LotoFacil.Classes
 				if (OnLinhaLida != null) {
 					OnLinhaLida(this, new EventArgs());
 				}
+				
+				// Ignorar linhas em branco
+				if (linha.Trim() == "")
+					continue;
+				
 				Jogo jogo = new Jogo(linha);
 				resultado.Add(jogo);
 			}
